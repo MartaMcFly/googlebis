@@ -1,0 +1,165 @@
+/* liste de couleur
+gris = #535353
+blue de google = #5187EB
+
+ */
+
+body{
+  background: #FFF;
+  font-family: arial;
+  font-size: 13px;
+}
+a{
+  color: #535353;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  margin : 0;
+  padding: 0
+}
+nav{
+  padding: 10px;
+}
+label{
+  position: relative;
+  left: -40px;
+  top: 10px;
+}
+
+nav ul{
+  list-style: none;
+  float: right;
+}
+li{
+  display: inline;
+  margin-right: 10px;
+}
+#logo{
+  clear: both;
+  text-align: center;
+  padding-top: 150px;
+}
+#logo img{
+  width: 272px;
+  height: 92px;
+}
+#bar{
+  text-align: center;
+  margin-top : 25px;
+}
+#bar input{
+  width: 632px;
+  height: 44px;
+  border: 1px #E4E4E4 solid;
+}
+#bar .micro{
+  width: 20px;
+  position: relative;
+  left: -40px;
+  top: 10px;
+}
+.menu{
+  width: 15px;
+  opacity: .6;
+}
+.menu:hover{
+  width: 15px;
+  opacity: 1;
+}
+.cnx a{
+  color: #fff;
+  font-weight: bold;
+  background: #5187EB;
+  padding: 5px;
+  border-radius: 2px;
+}
+.cnx a:hover{
+  box-shadow: 0px 1px 3px #000;
+  text-decoration: none;
+}
+.recherche_google{
+  margin-top: 30px;
+  text-align: center;
+}
+.recherche_google button{
+  height: 36px;
+  background: #F7F7F7;
+  border: solid 1px #EEE;
+  font-weight: bold;
+  color: #777;
+  font-size: 13px;
+}
+
+#bouton_intro{
+  height: 36px;
+  background: #F7F7F7;
+  border: solid 1px #EEE;
+  font-weight: bold;
+  color: #777;
+  font-size: 13px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.recherche_google button:hover{
+  color: #000;
+  border: solid 1px #EEE;
+  font-weight: bold;
+}
+
+
+p{
+  text-align: left;
+  padding-left: 15px;
+  margin: O;
+
+}
+
+.info
+{
+    padding: 15px;
+flex :1;
+}
+
+.infobis
+{
+    padding: 15px;
+    flex :2;
+    text-align: right;
+}
+
+.informations
+{
+display: flex;
+
+}
+
+footer{
+  position: absolute;
+  bottom: 0px;width: 100%;
+  margin :0;
+  background : #F2F2F2;
+  border-top: solid 1px #E4E4E4;
+  color: #535353;
+}
+
+footer ul{
+  border-top: solid 1px #E4E4E4;
+}
+.input:hover{
+  box-shadow: 1px 7px 15px #E4E4E4;
+}
+
+#central {
+  visibility:hidden;
+}
+
+
+
+
+
+/* test *************/
