@@ -11,20 +11,21 @@
 
 // function visibility() {
 //     document.getElementById("central").style.visibility = "visible";
-// } 
+// }
 
 
 bouton_intro.onclick = function() {
 	document.getElementById("bouton_intro").style.visibility = "hidden";
 	document.getElementById("central").style.visibility = "visible";
 }
-
-function recherche() {
-  let recherche = bar
-  localStorage.setItem('https://www.google.fr/#q=' + recherche);
-  monTitre.textContent = 'Mozilla est cool, ' + monNom;
-}
-
-bouton1.onclick = function(recherche) {
-	document.getElementByClass("").
-}
+//
+// function recherche() {
+//   let recherche = bar
+//   localStorage.setItem('https://www.google.fr/#q=' + recherche);
+//   monTitre.textContent = 'Mozilla est cool, ' + monNom;
+// }
+//
+// bouton1.onclick = function(recherche) {
+// 	document.getElementByClass("").
+// }
+//
