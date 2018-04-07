@@ -1,9 +1,7 @@
 /* liste de couleur
 gris = #535353
 blue de google = #5187EB
-
  */
-
 body{
   background: #FFF;
   font-family: arial;
@@ -28,7 +26,6 @@ label{
   left: -40px;
   top: 10px;
 }
-
 nav ul{
   list-style: none;
   float: right;
@@ -51,9 +48,10 @@ li{
   margin-top : 25px;
 }
 #bar input{
-  width: 632px;
+  width: 45%;
   height: 44px;
   border: 1px #E4E4E4 solid;
+  font-size: 16px;
 }
 #bar .micro{
   width: 20px;
@@ -116,31 +114,28 @@ p{
   text-align: left;
   padding-left: 15px;
   margin: 0;
-
 }
 
-.info
-{
-    padding: 15px;
-flex :1;
+.info{
+  padding: 15px;
+  flex :1;
 }
 
-.infobis
-{
-    padding: 15px;
-    flex :2;
-    text-align: right;
+.infobis{
+  padding: 15px;
+  flex :2;
+  text-align: right;
 }
 
-.informations
-{
-display: flex;
-
+.informations{
+  display: flex;
 }
 
 footer{
   position: absolute;
-  bottom: 0px;width: 100%;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
   margin :0;
   background : #F2F2F2;
   border-top: solid 1px #E4E4E4;
@@ -149,6 +144,9 @@ footer{
 
 footer ul{
   border-top: solid 1px #E4E4E4;
+}
+footer p{
+  padding: 15px;
 }
 .input:hover{
   box-shadow: 1px 7px 15px #E4E4E4;
@@ -163,3 +161,20 @@ footer ul{
 
 
 /* test *************/
+
+@media (max-width: 900px) {
+    #central #input{
+        width: 370px;
+    }
+}
+@media (max-width: 450px) {
+    .micro{
+      display: none;
+    }
+    footer p{
+      display: none;
+    }
+    footer .infobis{
+      display: none;
+    }
+}

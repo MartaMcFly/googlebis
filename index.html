@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Google by THP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
@@ -16,48 +18,42 @@
     </ul>
   </nav>
 
-<input id= "bouton_intro" type="button"  onclick="visibility()" value="AFFICHER LES ELEMENTS CENTRAUX!">
+  <input id= "bouton_intro" type="button"  onclick="visibility()" value="AFFICHER LES ELEMENTS CENTRAUX!">
 
-<section id="central">
-  <div id="logo">
-    <img src="img/google.png" alt="logo_google">
-  </div>
+  <section id="central">
+    <div id="logo">
+      <img src="img/google.png" alt="logo_google">
+    </div>
 
-  <div id="bar">
-    <input id="input" type="text" value="">
+    <div id="bar">
+      <input id="input" type="text" value="">
       <img class="micro" src="img/micro.png" alt="micro">
+    </div>
 
-  </div>
+    <div class="recherche_google">
+      <button class="bouton1" type="button" name="button" onclick="getURL()">Recherche Google</button>
+      <button class="bouton2" type="button" name="button">J'ai de la chance</button>
+    </div>
+  </section>
 
+  <footer>
+    <p>France</p>
+    <div class="informations">
+      <ul class="info">
+        <li> <a href="https://www.google.fr/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a></li>
+        <li> <a href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Entreprise</a></li>
+        <li><a href="https://www.google.fr/intl/fr_fr/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">À propos</a></li>
+      </ul>
 
-  <div class="recherche_google">
-    <button class="bouton1" type="button" name="button" onclick="getURL()">Recherche Google</button>
-    <button class="bouton2" type="button" name="button">J'ai de la chance</button>
-  </div>
-</section>
-
-<footer>
-  <p>France</p>
-
-  <div class="informations">
-    <ul class="info">
-      <li> <a href="https://www.google.fr/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a></li>
-      <li> <a href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Entreprise</a></li>
-      <li><a href="https://www.google.fr/intl/fr_fr/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">À propos</a></li>
-    </ul>
-
-    <ul class="infobis">
-      <li><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consommateurs</a></li>
-      <li><a href="https://www.google.fr/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a></li>
-      <li><a href="https://www.google.fr/intl/fr_fr/policies/terms/?fg=1">Conditions</a></li>
-      <li><a href="https://www.google.fr/preferences?hl=fr">Paramètres</a></li>
-      <li><a href="https://www.google.com/?gfe_rd=cr&dcr=0&ei=BwbFWrWbOK638weqqZCICQ&gws_rd=cr&fg=1">Utiliser Google.com</a></li>
-    </ul>
-  </div>
-</footer>
-
-
-
-  </body>
-  <script type="text/javascript" src="scripts/main.js"></script>
+      <ul class="infobis">
+        <li><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consommateurs</a></li>
+        <li><a href="https://www.google.fr/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a></li>
+        <li><a href="https://www.google.fr/intl/fr_fr/policies/terms/?fg=1">Conditions</a></li>
+        <li><a href="https://www.google.fr/preferences?hl=fr">Paramètres</a></li>
+        <li><a href="https://www.google.com/?gfe_rd=cr&dcr=0&ei=BwbFWrWbOK638weqqZCICQ&gws_rd=cr&fg=1">Utiliser Google.com</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="scripts/main.js"></script>
 </html>

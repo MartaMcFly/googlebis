@@ -11,7 +11,7 @@
 
 // function visibility() {
 //     document.getElementById("central").style.visibility = "visible";
-// } 
+// }
 
 
  bouton_intro.onclick = function() {
@@ -19,11 +19,22 @@
 	document.getElementById("central").style.visibility = "visible";
 }
 
-function getURL () {
-let saisie = document.querySelector('#input').value;
-let url = "https://www.google.fr/#q=" + saisie;
+// function getURL () {
+// let saisie = document.querySelector('#input').value;
+// let url = "https://www.google.fr/#q=" + saisie;
+// open(url);
+// }
+
+
+// version corrigé par Bab saisie.replace %20 par des espace dans l'URL
+function getURL() {
+ let saisie = document.querySelector('#input').value;
+ let texteFinal = saisie.replace(/ /g, '+');
+ let url= "https://www.google.fr/#q=" + texteFinal;
 open(url);
 }
+
+
 
 setTimeout(function () {
 	alert ("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please!");
@@ -42,7 +53,7 @@ setTimeout(function () {
 // var recherche = document.getElementById("bar").value;
 // var lien = "https://www.google.fr/#q=",recherche;
 
-// document.querySelector(".bouton1"); 
+// document.querySelector(".bouton1");
 
 // lien.onclick = fonction() {
 // 	window.location.replace("https://www.google.fr/#q=" + '#input')
