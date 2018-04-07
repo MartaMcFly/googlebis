@@ -6,6 +6,7 @@ body{
   background: #FFF;
   font-family: arial;
   font-size: 13px;
+  height: 100%;
 }
 a{
   color: #535353;
@@ -108,19 +109,15 @@ li{
   border: solid 1px #EEE;
   font-weight: bold;
 }
-
-
 p{
   text-align: left;
   padding-left: 15px;
   margin: 0;
 }
-
 .info{
   padding: 15px;
   flex :1;
 }
-
 .infobis{
   padding: 15px;
   flex :2;
@@ -132,9 +129,9 @@ p{
 }
 
 footer{
-  position: absolute;
+  /* position: absolute;
   bottom: 0px;
-  left: 0;
+  left: 0; */
   width: 100%;
   margin :0;
   background : #F2F2F2;
@@ -154,6 +151,7 @@ footer p{
 
 #central {
   visibility:hidden;
+  height: 100%;
 }
 
 
@@ -163,6 +161,9 @@ footer p{
 /* test *************/
 
 @media (max-width: 900px) {
+  body{
+    height: 100vh;
+  }
     #central #input{
         width: 370px;
     }
@@ -171,8 +172,8 @@ footer p{
     .micro{
       display: none;
     }
-    footer p{
-      display: none;
+    footer{
+
     }
     footer .infobis{
       display: none;
