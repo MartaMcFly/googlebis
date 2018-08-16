@@ -2,11 +2,15 @@
 gris = #535353
 blue de google = #5187EB
  */
+ *{
+   margin: 0;
+   padding: 0;
+ }
 body{
   background: #FFF;
   font-family: arial;
   font-size: 13px;
-  height: 100%;
+  height: calc(100vh - 110px);
 }
 a{
   color: #535353;
@@ -84,23 +88,10 @@ li{
   box-shadow: 0px 1px 3px #000;
   text-decoration: none;
 }
-.recherche_google{
-  margin-top: 30px;
-  text-align: center;
-}
-.recherche_google button{
-  height: 36px;
-  background: #F7F7F7;
-  border: solid 1px #EEE;
-  font-weight: bold;
-  color: #777;
-  font-size: 13px;
-}
-
 #bouton_intro{
   height: 36px;
   background: #F7F7F7;
-  border: solid 1px #EEE;
+  border: none;
   font-weight: bold;
   color: #777;
   font-size: 13px;
@@ -109,10 +100,26 @@ li{
   left:50%;
   transform: translate(-50%,-50%);
 }
+.recherche_google{
+  margin-top: 30px;
+  text-align: center;
+}
+.recherche_google button{
+  height: 36px;
+  padding: 0px 15px;
+  background: #F7F7F7;
+  border: solid 1px #EEE;
+  font-weight: bold;
+  color: #777;
+  font-size: 13px;
+  transition: .1s ease-in;
+}
+
 .recherche_google button:hover{
   color: #000;
   border: solid 1px #EEE;
   font-weight: bold;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 p{
   text-align: left;
@@ -134,11 +141,9 @@ p{
 }
 
 footer{
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  padding: 0;
   background : #F2F2F2;
+  height: 92px;
   border-top: solid 1px #E4E4E4;
   color: #535353;
 }
@@ -164,13 +169,17 @@ footer p{
 
 @media (max-width: 900px) {
   body{
-    height: 100vh;
+    min-height: calc(100vh - 79px);
   }
     #central #input{
         width: 370px;
     }
 }
 @media (max-width: 450px) {
+  #logo img{
+    width: 50%;
+    height: auto;
+  }
     .micro{
       display: none;
     }

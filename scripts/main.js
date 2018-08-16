@@ -37,7 +37,7 @@ open(url);
 
 
 setTimeout(function () {
-	alert ("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please!");
+	alert ("Fun fact: There's a rotated version of Google known as 'Google Mirror', which shows everything in a mirrored avatar. why not use this Google page to Google it 👨🏾‍💻");
 }, 10000);
 
 // function recherche() {
